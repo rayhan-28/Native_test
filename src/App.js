@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { PlayerCard } from 'native_react_sdk';
 
@@ -12,16 +12,16 @@ function App() {
 	<nav>
 	  <ul>
 		<li className="menu active">
-		  <a href="#" className="menus">Historias</a>
+		  <button className="menus">Historias</button>
 		</li>
 		<li className="menu">
-		  <a href="#" className="menus">Servicios</a>
+		  <button className="menus">Servicios</button>
 		</li>
 		<li className="menu">
-		  <a href="#" className="menus">Lugares</a>
+		  <button className="menus">Lugares</button>
 		</li>
 		<li className="menu">
-		  <a href="#" className="menus">Mapa</a>
+		  <button className="menus">Mapa</button>
 		</li>
 	  </ul>
 	</nav>
