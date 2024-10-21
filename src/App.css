@@ -15,7 +15,7 @@ a  { text-decoration:none; color:#63633d; border:1px solid #63633d; padding:5px 
 .h4  {    display:inline-block; letter-spacing: 2px;     max-width: 80%; }
 .h5 { font-size:1.2em;  letter-spacing: 1px; color:#63633d; }
 
-main  { display:flex; flex-direction:row; flex-wrap:wrap; justify-content:center;   }
+main  { display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between;   }
 
 section { flex-direction:column;  width:70%; margin-top:3%;  }
 article  { flex-direction:column; flex-wrap:wrap;  width:25%; border-right:1px solid #63633d;   }

@@ -1,8 +1,11 @@
 
+import { useState } from 'react';
 import './App.css';
-import { PlayerCard } from 'native_react_sdk';
+import { PlayerCard, PlayZone } from 'native_react_sdk';
 
 function App() {
+	const [showSuccess, setShowSuccess] = useState(false);
+
   return (
 	<div>
 	<header>
@@ -38,7 +41,7 @@ function App() {
 		  illo recusandae. Odit consectetur totam hic eius, commodi molestiae voluptates porro vel laboriosam,
 		  tempore, nostrum quis.
 		</p>
-
+       
 		<h5 className='h5'>Título del artículo 2</h5>
 		{/* Self-closing img tag */}
 		<img className='img' src="https://picsum.photos/200/300" alt="article" />
@@ -48,10 +51,26 @@ function App() {
 		  tempore, nostrum quis.
 		</p>
 	  </article>
-
 	  <section>
+       <button 
+	   onClick={()=>setShowSuccess(true)}
+	    style={{
+			padding:'8px 20px',
+			borderRadius:'15px 15px',
+			border:'none',
+			backgroundColor:'teal',
+			color:'white',
+			cursor:'pointer',
+			marginBottom:'20px'
+		}}
+	   >PlayZone</button>
+
 		<h3 className='h3'>SECCIÓN DE INFORMACIÓN DESTACADA</h3>
+		<div style={{height:'25px'}}></div>
          <PlayerCard/>
+       
+		 
+		{showSuccess && <PlayZone handleCloseSuccess={()=>setShowSuccess(false)}/>}
 		<h5>Título del artículo 1</h5>
 		{/* Self-closing img tag */}
 		<img className='img' src="https://picsum.photos/200/300" alt="featured article" />
