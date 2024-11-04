@@ -6,6 +6,11 @@ import axios from 'axios';
 
 function App() {
 	const [showSuccess, setShowSuccess] = useState(false);
+  const [erroShowSuccess,setErrorShowSuccess]=useState(false);
+  const handleshow=()=>{
+    setShowSuccess(true);
+    setErrorShowSuccess(true);
+   }
 	const [acknowledgementData, setAcknowledgementData] = useState(null);
 	const [error, setError] = useState(null);
     const email = 'jahir.rayhan@bedatasolutions.com';
@@ -82,7 +87,7 @@ function App() {
 	  </article>
 	  <section>
        <button 
-	   onClick={()=>setShowSuccess(true)}
+	   onClick={handleshow}
 	    style={{
 			padding:'8px 20px',
 			borderRadius:'15px 15px',
@@ -115,7 +120,13 @@ function App() {
 			marginBottom:'20px'
 		}}
 	   >Submit</button>
-		{showSuccess && <PlayZone email={email} handleCloseSuccess={()=>setShowSuccess(false)}/>}
+		 {showSuccess &&
+      <PlayZone email={email} 
+      erroShowSuccess={erroShowSuccess} 
+      setErrorShowSuccess={setErrorShowSuccess}
+      handleErrorClose={()=>setErrorShowSuccess(false)}
+      handleCloseSuccess={()=>setShowSuccess(false)}
+      />}
 		<h5>Título del artículo 1</h5>
 		{/* Self-closing img tag */}
 		<img className='img' src="https://picsum.photos/200/300" alt="featured article" />
