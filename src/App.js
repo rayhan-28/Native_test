@@ -1,17 +1,17 @@
 
 import { useState } from 'react';
 import './App.css';
-import { PlayerCard, PlayZone } from 'native_react_sdk';
+import { PlayerCard,PlayZone } from 'native_react_sdk';
 import axios from 'axios';
 
 function App() {
-	const [showSuccess, setShowSuccess] = useState(false);
+ const [showSuccess, setShowSuccess] = useState(false);
   const [erroShowSuccess,setErrorShowSuccess]=useState(false);
   const handleshow=()=>{
     setShowSuccess(true);
     setErrorShowSuccess(true);
    }
-	const [acknowledgementData, setAcknowledgementData] = useState(null);
+	// const [acknowledgementData, setAcknowledgementData] = useState(null);
 	const [error, setError] = useState(null);
     const email = 'jahir.rayhan@bedatasolutions.com';
 	const TokenTemp='4733788f-783d-455f-a2b7-3b1815e53196'
@@ -31,7 +31,7 @@ function App() {
 				}
 			  );
 			  if (response.status === 200) {
-				setAcknowledgementData(response.data);
+				//setAcknowledgementData(response.data);
 				console.log("hlw");
 			  }
 			} catch (err) {
@@ -126,6 +126,7 @@ function App() {
       setErrorShowSuccess={setErrorShowSuccess}
       handleErrorClose={()=>setErrorShowSuccess(false)}
       handleCloseSuccess={()=>setShowSuccess(false)}
+	  photoUrl="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg"
       />}
 		<h5>Título del artículo 1</h5>
 		{/* Self-closing img tag */}
