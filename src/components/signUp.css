@@ -85,6 +85,7 @@
   margin-bottom: 15px;
   background: linear-gradient(-90deg, #003A74, #006AD5);
   box-shadow: 1px 5px 9px rgba(211, 211, 211, .9);
+  cursor: pointer;
 }
 
 .footer_card{

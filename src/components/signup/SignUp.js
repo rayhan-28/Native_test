@@ -45,7 +45,7 @@ const SignUp = () => {
       <button type="button" onClick={handleClick} className="login_btn">Login</button>
       </> : <div style={{backgroundColor: 'greenyellow', height: "500px", width: "500px",  display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
             <h3>You are Logged in</h3>
-            <button style={{width: "200px"}} type="button" onClick={() => setIsLoggedIn(false)} className="login_btn">Back to login page</button>
+            <button style={{width: "200px",cursor:'pointer'}} type="button" onClick={() => setIsLoggedIn(false)} className="login_btn">Back to login page</button>
         </div>}
      
     </div>
