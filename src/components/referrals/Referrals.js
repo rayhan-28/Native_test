@@ -6,7 +6,7 @@ const Referrals = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [linkAddress,setLinkAddress]=useState("")
 	const [email,setEmail]=useState("");
-	const TokenTemp='4733788f-783d-455f-a2b7-3b1815e53196'
+	const TokenTemp='15d14c3a-6f74-4c6a-ba6d-7c335d195b63'
     const [showMessage,setShowMessage]=useState(null)
 	// const email = 'jahir.rayhan@bedatasolutions.com';
 	
