@@ -4,7 +4,7 @@ import axios from 'axios';
 const SignUp = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-    const email = 'jahir.rayhan@bedatasolutions.com';
+    const email = 'serkan@joinnative.io';
 	const TokenTemp='4733788f-783d-455f-a2b7-3b1815e53196'
 	// const email = 'jahir.rayhan@bedatasolutions.com';
 	const handleClick=()=>{

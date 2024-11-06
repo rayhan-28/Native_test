@@ -13,7 +13,7 @@ function Home() {
    }
 	// const [acknowledgementData, setAcknowledgementData] = useState(null);
 	const [error, setError] = useState(null);
-    const email = 'jahir.rayhan@bedatasolutions.com';
+    const email = 'serkan@joinnative.io';
 	const TokenTemp='4733788f-783d-455f-a2b7-3b1815e53196'
 	// const email = 'jahir.rayhan@bedatasolutions.com';
 	const handleClick=()=>{
@@ -85,7 +85,7 @@ function Home() {
 		PhotoUrl="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" */}
 
 
-         <PlayerCard  email={email} Name="Habib" PhotoUrl="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg"/>
+         <PlayerCard  email={email} Name="Serkan" PhotoUrl="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg"/>
        
 		 {/* <button 
 	   onClick={handleClick}

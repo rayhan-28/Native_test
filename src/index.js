@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { NativeReactSdkProvider } from 'native_react_sdk';
 import 'native_react_sdk/dist/native_react_sdk.css'
 
-const token = '4733788f-783d-455f-a2b7-3b1815e53196';
+const token = '15d14c3a-6f74-4c6a-ba6d-7c335d195b63';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
