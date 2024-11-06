@@ -5,7 +5,7 @@ const SignUp = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     const email = 'serkan@joinnative.io';
-	const TokenTemp='4733788f-783d-455f-a2b7-3b1815e53196'
+	const TokenTemp='15d14c3a-6f74-4c6a-ba6d-7c335d195b63'
 	// const email = 'jahir.rayhan@bedatasolutions.com';
 	const handleClick=()=>{
 		const fetchData = async () => {
