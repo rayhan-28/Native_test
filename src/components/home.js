@@ -11,6 +11,12 @@ function Home() {
     setShowSuccess(true);
     setErrorShowSuccess(true);
    }
+
+   const [isExpanded, setIsExpanded] = useState(false);
+   const toggleView = () => {
+    setIsExpanded(!isExpanded);
+   };
+
 	// const [acknowledgementData, setAcknowledgementData] = useState(null);
 	const [error, setError] = useState(null);
     const email = 'serkan@joinnative.io';
@@ -47,7 +53,7 @@ function Home() {
 		<h4 className='h4'>ARTÍCULOS SOBRE NOVEDADES</h4>
 
 		<h5 className='h5'>Título del artículo 1</h5>
-		{/* Self-closing img tag */}
+		  
 		<img className='img' src="https://www.lorempixel.com/400/200" alt="article" />
 		<p className='p'>
 		  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sequi nisi aliquam, ipsum tempore
@@ -56,6 +62,7 @@ function Home() {
 		</p>
        
 		<h5 className='h5'>Título del artículo 2</h5>
+		
 		{/* Self-closing img tag */}
 		<img className='img' src="https://picsum.photos/200/300" alt="article" />
 		<p className='p'>
@@ -81,11 +88,18 @@ function Home() {
 		<h3 className='h3'>SECCIÓN DE INFORMACIÓN DESTACADA</h3>
 		<div style={{height:'25px'}}></div>
 
+       
+		{/* Self-closing img tag */}
+
+
+
+
+
 		{/* Name="Rayhan" 
 		PhotoUrl="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" */}
 
-
-         <PlayerCard  email={email} Name="Serkan" PhotoUrl="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg"/>
+       
+       
        
 		 {/* <button 
 	   onClick={handleClick}
@@ -117,6 +131,7 @@ function Home() {
 		</p>
 
 		<h5 className='h5'>Título del artículo 2</h5>
+		<PlayerCard  email={email} Name="Serkan" PhotoUrl="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg"/>
 		{/* Self-closing img tag */}
 		<img className='img' src="https://picsum.photos/200/300" alt="featured article" />
 		<p className='p'>
